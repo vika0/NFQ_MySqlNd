@@ -9,9 +9,8 @@ include 'Book.php';
 <body>
 <?php
 $Book = new Book();
-$id = $_GET['id'];
 $Book->loadAll();
-echo $Book->getTitle().$Book->getBookId();
+echo $Book->getTitle().$Book->getAuthor();
 ?>
 </body>
 </html>
